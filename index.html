@@ -11,27 +11,78 @@
   <head>
     <meta charset="UTF-8">
     <title> Week 7 Notes </title>
-    
+
     <style>
       ul {
-list-style: none ; //takes away the bullet points from the list
-margin: 0 ;
-padding: 0 ;
-}
-    
+        list-style: none;
+        /* takes away the bullet points from the list */
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        /* makes it go horizontal not vertical */
+        margin-right: 20px;
+
+      }
+
+      a {
+        color: blue;
+        /* normal the colour is blue */
+      }
+
+      a:hover {
+        color: red;
+        /*when hovering colour is red */
+      }
+
+      body {
+        background-color: white;
+        margin: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .grid-item {
+        background-color: red;
+        min-height: 150px;
+      }
     </style>
   </head>
-  
+
   <body>
+
     <nav>
-    <ul>
-      
-    <li> Home </li>
-      <li> Menu </li>
-      <li> About Us </li>
-      <li> Contact Us</li>
+      <ul>
+
+        <li> <a href="/"> Home </a> </li>
+        <li> Menu </li>
+        <li> About Us </li>
+        <li> Contact Us</li>
       </ul>
     </nav>
+
+    <h1>3x3 Grid Layout Demo</h1>
+
+    <div class="container">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+    </div>
   </body>
-  
+
 </html>
